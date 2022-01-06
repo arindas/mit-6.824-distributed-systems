@@ -1,5 +1,5 @@
-# MIT 6.824 Distributed Systems
-Labs, solutions and related materials from the [MIT 8.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) course.
+## MIT 6.824 Distributed Systems
+Labs, solutions and related materials from the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) course.
 
 From the official website:
 >## What is 6.824 about?
