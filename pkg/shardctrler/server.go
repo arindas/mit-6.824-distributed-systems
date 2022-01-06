@@ -1,11 +1,12 @@
 package shardctrler
 
+import (
+	"sync"
 
-import "6.824/raft"
-import "6.824/labrpc"
-import "sync"
-import "6.824/labgob"
-
+	"github.com/arindas/mit-6.824-distributed-systems/pkg/labgob"
+	"github.com/arindas/mit-6.824-distributed-systems/pkg/labrpc"
+	"github.com/arindas/mit-6.824-distributed-systems/pkg/raft"
+)
 
 type ShardCtrler struct {
 	mu      sync.Mutex
@@ -18,11 +19,9 @@ type ShardCtrler struct {
 	configs []Config // indexed by config num
 }
 
-
 type Op struct {
 	// Your data here.
 }
-
 
 func (sc *ShardCtrler) Join(args *JoinArgs, reply *JoinReply) {
 	// Your code here.
@@ -39,7 +38,6 @@ func (sc *ShardCtrler) Move(args *MoveArgs, reply *MoveReply) {
 func (sc *ShardCtrler) Query(args *QueryArgs, reply *QueryReply) {
 	// Your code here.
 }
-
 
 //
 // the tester calls Kill() when a ShardCtrler instance won't

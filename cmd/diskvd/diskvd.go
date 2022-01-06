@@ -15,12 +15,15 @@ package main
 //   -d directory
 //   -r restart
 
-import "time"
-import "6.824/diskv"
-import "os"
-import "fmt"
-import "strconv"
-import "runtime"
+import (
+	"fmt"
+	"os"
+	"runtime"
+	"strconv"
+	"time"
+	// TODO: implement package
+	// "github.com/arindas/mit-6.824-distributed-systems/pkg/diskv"
+)
 
 func usage() {
 	fmt.Printf("Usage: diskvd -g gid -m master... -s server... -i my-index -d dir\n")
@@ -32,9 +35,14 @@ func main() {
 	masters := []string{}  // ports of shardmasters
 	replicas := []string{} // ports of servers in my replica group
 	me := -1               // my index in replicas[]
-	unreliable := false
+
+	// TODO: uncomment and use var
+	// unreliable := false
+
 	dir := "" // store persistent data here
-	restart := false
+
+	// TODO: uncomment and use var
+	// restart := false
 
 	for i := 1; i+1 < len(os.Args); i += 2 {
 		a0 := os.Args[i]
@@ -48,11 +56,13 @@ func main() {
 		} else if a0 == "-i" {
 			me, _ = strconv.Atoi(a1)
 		} else if a0 == "-u" {
-			unreliable, _ = strconv.ParseBool(a1)
+			// TODO: uncomment and use var
+			// unreliable, _ = strconv.ParseBool(a1)
 		} else if a0 == "-d" {
 			dir = a1
 		} else if a0 == "-r" {
-			restart, _ = strconv.ParseBool(a1)
+			// TODO: uncomment and use var
+			// restart, _ = strconv.ParseBool(a1)
 		} else {
 			usage()
 		}
@@ -64,8 +74,9 @@ func main() {
 
 	runtime.GOMAXPROCS(4)
 
-	srv := diskv.StartServer(gid, masters, replicas, me, dir, restart)
-	srv.Setunreliable(unreliable)
+	// TODO: Start server
+	// srv := diskv.StartServer(gid, masters, replicas, me, dir, restart)
+	// srv.Setunreliable(unreliable)
 
 	// for safety, force quit after 10 minutes.
 	time.Sleep(10 * 60 * time.Second)

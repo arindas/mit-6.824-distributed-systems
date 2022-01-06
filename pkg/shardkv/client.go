@@ -8,11 +8,14 @@ package shardkv
 // talks to the group that holds the key's shard.
 //
 
-import "6.824/labrpc"
-import "crypto/rand"
-import "math/big"
-import "6.824/shardctrler"
-import "time"
+import (
+	"crypto/rand"
+	"math/big"
+	"time"
+
+	"github.com/arindas/mit-6.824-distributed-systems/pkg/labrpc"
+	"github.com/arindas/mit-6.824-distributed-systems/pkg/shardctrler"
+)
 
 //
 // which shard is a key in?
@@ -104,7 +107,6 @@ func (ck *Clerk) PutAppend(key string, value string, op string) {
 	args.Key = key
 	args.Value = value
 	args.Op = op
-
 
 	for {
 		shard := key2shard(key)

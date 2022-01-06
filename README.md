@@ -1,6 +1,5 @@
 # MIT 6.824 Distributed Systems
-
-Labs, solutions and related materials from the [MIT 8.824 Distributed Systems](https://pdos.csail.mit.edu/6.824/) course.
+Labs, solutions and related materials from the [MIT 8.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) course.
 
 From the official website:
 >## What is 6.824 about?
@@ -9,18 +8,25 @@ From the official website:
 >topics include fault tolerance, replication, and consistency. Much of the class consists of studying and discussing case
 >studies of distributed systems.
 
-
-## Purpose
-The purpose for the creation and maintenance of this repository is as follows:
-- Migrating the existing labs to go modules to increase accessiblity
-- To host my solutions
+## Labs
+- [ ] Lab 1: MapReduce
+- [ ] Lab 2: Raft Consensus Algorithm
+  - [ ] Lab 2A: Raft Leader Election
+  - [ ] Lab 2B: Raft Log Entries Append
+  - [ ] Lab 2C: Raft state persistence
+- [ ] Lab 3: Fault-tolerant Key/Value Service
+  - [ ] Lab 3A: Key/value Service Without Log Compaction
+  - [ ] Lab 3B: Key/value Service With Log Compaction
+- [ ] Lab 4: Sharded Key/Value Service
 
 ## Attribution
-Materials presented here are based on the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824/) which are
-distributed under the Creative Commons website as listed in the website.
-![creative-commons-logo](https://creativecommons.org/licenses/by/3.0/us/)
-This falls under fair use of the Creative Commons license.
+Materials presented here are based on the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) which are
+distributed under the Creative Commons License website as listed in the website. This falls under fair use of the
+Creative Commons License.
 
 In case of any disputes, please contact:
-Arindam Das, dasarindam.mails@gmail.com
+
+Arindam Das
+
+dasarindam.mails@gmail.com
 

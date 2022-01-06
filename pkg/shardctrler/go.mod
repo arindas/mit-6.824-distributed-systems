@@ -1,19 +1,19 @@
-module github.com/arindas/mit-6.824-distributed-systems/pkg/kvraft
+module github.com/arindas/mit-6.824-distributed-systems/pkg/shardctrler
 
 go 1.17
 
-replace 6.824/labrpc => ../labrpc
+replace github.com/arindas/mit-6.824-distributed-systems/pkg/labrpc => ../labrpc
 
-replace 6.824/labgob => ../labgob
+replace github.com/arindas/mit-6.824-distributed-systems/pkg/labgob => ../labgob
 
-replace 6.824/raft => ../raft
+replace github.com/arindas/mit-6.824-distributed-systems/pkg/raft => ../raft
 
-replace 6.824/models => ../models
+replace github.com/arindas/mit-6.824-distributed-systems/pkg/models => ../models
 
-replace 6.824/porcupine => ../porcupine
+replace github.com/arindas/mit-6.824-distributed-systems/pkg/porcupine => ../porcupine
 
 require (
-	6.824/labgob v0.0.0-00010101000000-000000000000
-	6.824/labrpc v0.0.0-00010101000000-000000000000
-	6.824/raft v0.0.0-00010101000000-000000000000
+	github.com/arindas/mit-6.824-distributed-systems/pkg/labgob v0.0.0-00010101000000-000000000000
+	github.com/arindas/mit-6.824-distributed-systems/pkg/labrpc v0.0.0-00010101000000-000000000000
+	github.com/arindas/mit-6.824-distributed-systems/pkg/raft v0.0.0-00010101000000-000000000000
 )

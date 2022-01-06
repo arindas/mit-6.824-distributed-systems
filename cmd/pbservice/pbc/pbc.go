@@ -18,9 +18,12 @@ package main
 // and restart them to exercise fault tolerance.
 //
 
-import "6.824/pbservice"
-import "os"
-import "fmt"
+import (
+	"fmt"
+	"os"
+	// TODO: implement package
+	// "github.com/arindas/mit-6.824-distributed-systems/pkg/pbservice"
+)
 
 func usage() {
 	fmt.Printf("Usage: pbc viewport key\n")
@@ -30,14 +33,14 @@ func usage() {
 
 func main() {
 	if len(os.Args) == 3 {
-		// get
-		ck := pbservice.MakeClerk(os.Args[1], "")
-		v := ck.Get(os.Args[2])
-		fmt.Printf("%v\n", v)
+		// TODO: implement get
+		// ck := pbservice.MakeClerk(os.Args[1], "")
+		// v := ck.Get(os.Args[2])
+		// fmt.Printf("%v\n", v)
 	} else if len(os.Args) == 4 {
-		// put
-		ck := pbservice.MakeClerk(os.Args[1], "")
-		ck.Put(os.Args[2], os.Args[3])
+		// TODO: implement put
+		// ck := pbservice.MakeClerk(os.Args[1], "")
+		// ck.Put(os.Args[2], os.Args[3])
 	} else {
 		usage()
 	}

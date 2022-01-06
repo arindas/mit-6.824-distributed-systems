@@ -6,10 +6,13 @@ package main
 // go build -buildmode=plugin wc.go
 //
 
-import "6.824/mr"
-import "unicode"
-import "strings"
-import "strconv"
+import (
+	"strconv"
+	"strings"
+	"unicode"
+
+	"github.com/arindas/mit-6.824-distributed-systems/pkg/mr"
+)
 
 //
 // The map function is called once for each file of input. The first

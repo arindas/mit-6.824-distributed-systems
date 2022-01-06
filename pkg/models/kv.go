@@ -1,8 +1,11 @@
 package models
 
-import "6.824/porcupine"
-import "fmt"
-import "sort"
+import (
+	"fmt"
+	"sort"
+
+	"github.com/arindas/mit-6.824-distributed-systems/pkg/porcupine"
+)
 
 type KvInput struct {
 	Op    uint8 // 0 => get, 1 => put, 2 => append

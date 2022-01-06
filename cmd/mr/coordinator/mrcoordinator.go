@@ -9,10 +9,13 @@ package main
 // Please do not change this file.
 //
 
-import "6.824/mr"
-import "time"
-import "os"
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"time"
+
+	"github.com/arindas/mit-6.824-distributed-systems/pkg/mr"
+)
 
 func main() {
 	if len(os.Args) < 2 {
