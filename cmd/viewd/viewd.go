@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"os"
 	"time"
-
-	"github.com/arindas/mit-6.824-distributed-systems/pkg/viewservice"
+	// TODO: implement package
+	// "github.com/arindas/mit-6.824-distributed-systems/pkg/viewservice"
 )
 
 func main() {
@@ -18,7 +18,8 @@ func main() {
 		os.Exit(1)
 	}
 
-	viewservice.StartServer(os.Args[1])
+	// TODO: start server
+	// viewservice.StartServer(os.Args[1])
 
 	for {
 		time.Sleep(100 * time.Second)
