@@ -20,9 +20,7 @@ From the official website:
 - [ ] Lab 4: Sharded Key/Value Service
 
 ## Attribution
-Materials presented here are based on the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) which are
-distributed under the Creative Commons License website as listed in the website. This falls under fair use of the
-Creative Commons License.
+Materials presented here are based on the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) course,  which are distributed under the Creative Commons License, as listed on the website. This repository falls under fair use of the Creative Commons License.
 
 In case of any disputes, please contact:
 
