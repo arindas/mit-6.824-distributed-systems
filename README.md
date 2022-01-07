@@ -7,6 +7,7 @@ Labs, solutions and related materials from the [MIT 6.824 Distributed Systems](h
 
 <p align="center">
   <a href="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml"><img src="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml/badge.svg" alt="ci-tests status"></a>
+  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems.svg?type=shield"/></a> 
 </p>
 
 From the official website:
@@ -87,3 +88,7 @@ Arindam Das
 
 dasarindam.mails@gmail.com
 
+## LICENSE
+The solutions presented here are licensed under the MIT License. See [LICENSE](./LICENSE) for full license text.
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems?ref=badge_large)
