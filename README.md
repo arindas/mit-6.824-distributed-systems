@@ -16,6 +16,8 @@ From the official website:
 >topics include fault tolerance, replication, and consistency. Much of the class consists of studying and discussing case
 >studies of distributed systems.
 
+*All solutions presented here are my own and are distributed under the MIT License. See below for further details.*
+
 ## Labs Progress
 - [ ] Lab 1: MapReduce
 - [ ] Lab 2: Raft Consensus Algorithm
