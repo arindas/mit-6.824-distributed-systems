@@ -1,0 +1,52 @@
+name: ci-tests
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - cmd/**
+      - pkg/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - cmd/**
+      - pkg/**
+
+jobs:
+  test-mapreduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd cmd/mr/scripts && bash test-mr-many.sh 5
+  
+  test-labrpc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd pkg/labrpc && go test
+  
+  test-labgob:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd pkg/labgob && go test
+
+  test-raft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd pkg/raft && go test
+  
+  test-shardctrler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd pkg/shardctrler && go test 
+  
+  test-shardkv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd pkg/shardkv && go test
