@@ -8,6 +8,12 @@ mrtmp.*
 /pbservice/x.txt
 /kvpaxos/x.txt
 *.so
-/main/mrcoordinator
-/main/mrsequential
-/main/mrworker
+/cmd/mr/coordinator/mrcoordinator
+/cmd/mr/sequential/mrsequential
+/cmd/mr/worker/mrworker
+/cmd/diskvd/diskvd
+/cmd/lockservice/lockc/lockc
+/cmd/lockservice/lockd/lockd
+/cmd/pbservice/pbc/pbc
+/cmd/pbservice/pbd/pbd
+/cmd/viewd/viewd
