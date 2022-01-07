@@ -29,6 +29,34 @@ From the official website:
   - [ ] Lab 3B: Key/value Service With Log Compaction
 - [ ] Lab 4: Sharded Key/Value Service
 
+## Self study
+If you wish to work on the labs on your own, checkout from the tag v0.1.0 into a new branch.
+```shell
+git checkout v0.1.0
+git checkout -b ${branch}
+```
+
+In order to use github actions to check your labs, add your branch to the test workflow:
+```yml
+--- a/.github/workflows/ci-tests.yml
++++ b/.github/workflows/ci-tests.yml
+@@ -4,12 +4,14 @@ on:
+   push:
+     branches:
+       - main
++      - ${branch}
+     paths:
+       - cmd/**
+       - pkg/**
+   pull_request:
+     branches:
+       - main
++      - ${branch}
+     paths:
+       - cmd/**
+       - pkg/**
+```
+
 ## Testing
 All of the labs from the original source tree has been migrated to go modules. Except for mapreduce, the tests for all
 labs may be run as follows:
