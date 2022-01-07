@@ -5,6 +5,10 @@ Labs, solutions and related materials from the [MIT 6.824 Distributed Systems](h
     <img src="./assets/logo.png" alt="distributed-systems" width="300" />   
 </p> 
 
+<p align="center">
+  <a href="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml"><img src="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml/badge.svg" alt="ci-tests status"></a>
+</p>
+
 From the official website:
 >## What is 6.824 about?
 >6.824 is a core 12-unit graduate subject with lectures, readings, programming labs, an optional project, a mid-term exam,
