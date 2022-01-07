@@ -2,7 +2,7 @@
 Labs, solutions and related materials from the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) course.
 
 <p align="center">
-    <img src="./assets/logo.jpg" alt="distributed-systems" width="300" />   
+    <img src="./assets/logo.png" alt="distributed-systems" width="300" />   
 </p> 
 
 From the official website:
