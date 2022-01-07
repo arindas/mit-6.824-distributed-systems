@@ -88,7 +88,7 @@ Arindam Das
 
 dasarindam.mails@gmail.com
 
-## LICENSE
+## License
 The solutions presented here are licensed under the MIT License. See [LICENSE](./LICENSE) for full license text.
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems?ref=badge_large)
