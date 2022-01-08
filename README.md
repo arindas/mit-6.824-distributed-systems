@@ -1,5 +1,5 @@
 # MIT 6.824 Distributed Systems
-Labs, solutions and related materials from the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) course.
+Labs, solutions and related materials from the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824) course.
 
 <p align="center">
     <img src="./assets/logo.png" alt="distributed-systems" width="300" />   
@@ -10,16 +10,25 @@ Labs, solutions and related materials from the [MIT 6.824 Distributed Systems](h
   <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems.svg?type=shield"/></a> 
 </p>
 
-From the official website:
->## What is 6.824 about?
+## Overview
+From the official [website](https://pdos.csail.mit.edu/6.824):
+>### What is 6.824 about?
 >6.824 is a core 12-unit graduate subject with lectures, readings, programming labs, an optional project, a mid-term exam,
 >and a final exam. It will present abstractions and implementation techniques for engineering distributed systems. Major
 >topics include fault tolerance, replication, and consistency. Much of the class consists of studying and discussing case
 >studies of distributed systems.
 
-*All solutions presented here are my own and are distributed under the MIT License. See below for further details.*
+This repository was created to serve as an environment for working on the labs as well as hosting my solutions for them.
+It's primary purpose is to serve as learning resource and a pedagogical tool. Each lab will be accompanied with a corresponding
+specification and design document to outline the approach used to solve the tasks. Effort will be made to make the solutions
+production grade, but at the same time, approachable for any Gopher.
+
+The tests from the original source tree have been preserved to a great extent to ensure the authenticity of the labs. The only
+changes to the tests are updated paths for different artefacts due to the change in the directory structure.
 
 ## Labs Progress
+Each completed checklist item is also a link to its spec and design document.
+
 - [ ] Lab 1: MapReduce
 - [ ] Lab 2: Raft Consensus Algorithm
   - [ ] Lab 2A: Raft Leader Election
@@ -80,15 +89,9 @@ bash test-mr-many.sh  # multiple trials
 Required binaries can be built by running `go build` in the respective `cmd/` subdirectories.
 
 ## Attribution
-Materials presented here are based on the materials from [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) course, which are distributed under the Creative Commons License, as listed on the website. This repository falls under fair use of the Creative Commons License.
+Materials presented in this repository are based on the materials from [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) course, which are distributed under the Creative Commons License, as mentioned on their website. This repository falls under fair use of the Creative Commons License.
 
-In case of any disputes, please contact:
-
-Arindam Das
-
-dasarindam.mails@gmail.com
+In case of any disputes, please contact: Arindam Das <dasarindam.mails@gmail.com>
 
 ## License
 The solutions presented here are licensed under the MIT License. See [LICENSE](./LICENSE) for full license text.
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems?ref=badge_large)
