@@ -82,7 +82,7 @@ For the mapreduce lab, run the tests as follows:
 ```
 cd cmd/mr/scripts
 bash test-mr.sh  # single trial
-bash test-mr-many.sh  # multiple trials
+bash test-mr-many.sh $N_TRIALS # multiple trials
 ```
 
 ## Building
