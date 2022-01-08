@@ -23,8 +23,40 @@ It's primary purpose is to serve as learning resource and a pedagogical tool. Ea
 specification and design document to outline the approach used to solve the tasks. Effort will be made to make the solutions
 production grade, but at the same time, approachable for any Gopher.
 
-The tests from the original source tree have been preserved to a great extent to ensure the authenticity of the labs. The only
-changes to the tests are updated paths for different artefacts due to the change in the directory structure.
+The tests from the original source tree at [git://g.csail.mit.edu/6.824-golabs-2021](git://g.csail.mit.edu/6.824-golabs-2021)
+have been preserved to a great extent to ensure the authenticity of the labs. The only changes to the tests are updated paths
+for different artefacts due to the changes in the directory structure.
+
+## Organization
+The repository is organized as follows:
+```
+.
+├── assets
+│   └── logo.png
+├── cmd
+│   ├── diskvd
+│   ├── lockservice
+│   ├── mr
+│   ├── pbservice
+│   └── viewd
+├── datasets
+│   └── project-gutenberg
+├── LICENSE
+├── pkg
+│   ├── kvraft
+│   ├── labgob
+│   ├── labrpc
+│   ├── models
+│   ├── mr
+│   ├── porcupine
+│   ├── raft
+│   ├── shardctrler
+│   └── shardkv
+└── README.md
+```
+
+The core of each module is represented as a package under the `pkg/` subdirectories. Most of these packages are
+accompanied by tests in the same directory. The user facing utlitiy command/program binaries are kept under `cmd/`.
 
 ## Labs Progress
 Each completed checklist item is also a link to its spec and design document.
@@ -79,17 +111,17 @@ go test
 ```
 
 For the mapreduce lab, run the tests as follows:
-```
+```shell
 cd cmd/mr/scripts
 bash test-mr.sh  # single trial
-bash test-mr-many.sh $N_TRIALS # multiple trials
+bash test-mr-many.sh $N_TRIALS  # multiple trials
 ```
 
 ## Building
 Required binaries can be built by running `go build` in the respective `cmd/` subdirectories.
 
 ## Attribution
-Materials presented in this repository are based on the materials from [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/github.com/arindas/mit-6.824-distributed-systems/pkg/) course, which are distributed under the Creative Commons License, as mentioned on their website. This repository falls under fair use of the Creative Commons License.
+Materials presented in this repository are based on the materials from [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824) course, which are distributed under the Creative Commons License, as mentioned on their website. This repository falls under fair use of the Creative Commons License.
 
 In case of any disputes, please contact: Arindam Das <dasarindam.mails@gmail.com>
 
