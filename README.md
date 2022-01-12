@@ -1,13 +1,14 @@
 # MIT 6.824 Distributed Systems
-Labs, solutions and related materials from the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824) course.
+Labs and related materials from the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824) course.
+
+**This repository will contain no solutions as requested by rtm <rtm@csail.mit.edu>**
 
 <p align="center">
     <img src="./assets/logo.png" alt="distributed-systems" width="300" />   
 </p> 
 
 <p align="center">
-  <a href="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml"><img src="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml/badge.svg" alt="ci-tests status"></a>
-  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Farindas%2Fmit-6.824-distributed-systems.svg?type=shield"/></a> 
+  <a href="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml"><img src="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml/badge.svg" alt="ci-tests status"></a> 
 </p>
 
 ## Overview
@@ -18,10 +19,7 @@ From the official [website](https://pdos.csail.mit.edu/6.824):
 >topics include fault tolerance, replication, and consistency. Much of the class consists of studying and discussing case
 >studies of distributed systems.
 
-This repository was created to serve as an environment for working on the labs as well as hosting my solutions for them.
-It's primary purpose is to serve as learning resource and a pedagogical tool. Each lab will be accompanied with a corresponding
-specification and design document to outline the approach used to solve the tasks. Effort will be made to make the solutions
-production grade, but at the same time, approachable for any Gopher.
+This repository was created to serve as an environment for working on the labs.
 
 The tests from the original source tree at [git://g.csail.mit.edu/6.824-golabs-2021](git://g.csail.mit.edu/6.824-golabs-2021)
 have been preserved to a great extent to ensure the authenticity of the labs. The only changes to the tests are updated paths
@@ -59,7 +57,7 @@ The core of each module is represented as a package under the `pkg/` subdirector
 accompanied by tests in the same directory. The user facing utlitiy command/program binaries are kept under `cmd/`.
 
 ## Labs Progress
-Each completed checklist item is also a link to its spec and design document.
+Mark your progress with this checklist.
 
 - [ ] Lab 1: MapReduce
 - [ ] Lab 2: Raft Consensus Algorithm
@@ -70,34 +68,6 @@ Each completed checklist item is also a link to its spec and design document.
   - [ ] Lab 3A: Key/value Service Without Log Compaction
   - [ ] Lab 3B: Key/value Service With Log Compaction
 - [ ] Lab 4: Sharded Key/Value Service
-
-## Self study
-If you wish to work on the labs on your own, checkout from the tag v0.1.0 into a new branch.
-```shell
-git checkout v0.1.0
-git checkout -b ${branch}
-```
-
-In order to use github actions to check your labs, add your branch to the test workflow:
-```yml
---- a/.github/workflows/ci-tests.yml
-+++ b/.github/workflows/ci-tests.yml
-@@ -4,12 +4,14 @@ on:
-   push:
-     branches:
-       - main
-+      - ${branch}
-     paths:
-       - cmd/**
-       - pkg/**
-   pull_request:
-     branches:
-       - main
-+      - ${branch}
-     paths:
-       - cmd/**
-       - pkg/**
-```
 
 ## Testing
 All of the labs from the original source tree has been migrated to go modules. Except for mapreduce, the tests for all
@@ -126,4 +96,4 @@ Materials presented in this repository are based on the materials from [MIT 6.82
 In case of any disputes, please contact: Arindam Das <dasarindam.mails@gmail.com>
 
 ## License
-The solutions presented here are licensed under the MIT License. See [LICENSE](./LICENSE) for full license text.
+This restructured repository is licensed under the MIT License. See [LICENSE](./LICENSE) for full license text.
