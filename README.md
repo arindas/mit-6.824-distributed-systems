@@ -1,10 +1,6 @@
 # MIT 6.824 Distributed Systems
 Labs and related materials from the [MIT 6.824 Distributed Systems](https://pdos.csail.mit.edu/6.824) course.
 
-**This repository will contain no solutions as requested by rtm <rtm@csail.mit.edu>**
-
-If you use this template, please make your resulting repository with solutions private.
-
 <p align="center">
     <img src="./assets/logo.png" alt="distributed-systems" width="300" />   
 </p> 
@@ -12,6 +8,9 @@ If you use this template, please make your resulting repository with solutions p
 <p align="center">
   <a href="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml"><img src="https://github.com/arindas/mit-6.824-distributed-systems/actions/workflows/ci-tests.yml/badge.svg" alt="ci-tests status"></a> 
 </p>
+
+**This repository will contain no solutions as requested by rtm <rtm@csail.mit.edu>** <br>
+If you use this template, please make your resulting repository with solutions private.
 
 ## Overview
 From the official [website](https://pdos.csail.mit.edu/6.824):
