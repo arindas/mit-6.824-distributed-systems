@@ -200,12 +200,15 @@ timeout -k 2s 180s ../../worker/mrworker ../../apps/early_exit/early_exit.so &
 # are not waited upon
 jobs &> /dev/null
 
-sum=`expr $(pgrep -c mrworker) + $(pgrep -c mrcoordinator)`
-newSum=`expr $(pgrep -c mrworker) + $(pgrep -c mrcoordinator)`
+# wait -n ## -n flag not available on bash in certain systems
 
-while [ $sum -eq $newSum ]
-do
-newSum=`expr $(pgrep -c mrworker) + $(pgrep -c mrcoordinator)`
+initial_proc_count=`expr $(pgrep -c mrworker) + $(pgrep -c mrcoordinator)`
+proc_count=${initial_proc_count}
+
+# Busy wait loop: check if any background process has exited or not.
+# proc_count decreases by one when a process exits.
+while [ $proc_count -eq $initial_proc_count ]; do
+    proc_count=`expr $(pgrep -c mrworker) + $(pgrep -c mrcoordinator)`
 done
 
 # a process has exited. this means that the output should be finalized
