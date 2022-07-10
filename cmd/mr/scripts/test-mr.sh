@@ -199,7 +199,14 @@ timeout -k 2s 180s ../../worker/mrworker ../../apps/early_exit/early_exit.so &
 # `jobs` ensures that any completed old processes from other tests
 # are not waited upon
 jobs &> /dev/null
-wait -n
+
+sum=`expr $(pgrep -c mrworker) + $(pgrep -c mrcoordinator)`
+newSum=`expr $(pgrep -c mrworker) + $(pgrep -c mrcoordinator)`
+
+while [ $sum -eq $newSum ]
+do
+newSum=`expr $(pgrep -c mrworker) + $(pgrep -c mrcoordinator)`
+done
 
 # a process has exited. this means that the output should be finalized
 # otherwise, either a worker or the coordinator exited early
